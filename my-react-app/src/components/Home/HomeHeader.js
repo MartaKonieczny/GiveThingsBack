@@ -8,7 +8,6 @@ class HomeHeader extends React.Component{
         return(
             <>
                 <LogRegi/>,
-                <Nav/>,
                 <MainSection/>
             </>
 

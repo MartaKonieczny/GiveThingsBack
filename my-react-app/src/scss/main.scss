@@ -1,7 +1,24 @@
 @import "settings/reset";
 @import "settings/colors";
 @import "settings/fonts";
+@import "home/nav";
+@import "home/mainSection";
+@import "home/homeThreeColumns";
+@import "home/homeWhatIsGoingOn";
+@import "home/homeAbout";
+@import "home/homeFoundationOrganizations";
+@import "home/homeContact";
+@import "sections/foundations";
+@import "sections/organizations";
+@import "sections/collections";
+@import "loginRegistration/logRegi";
+@import "loginRegistration/logIn";
+@import "loginRegistration/register";
 
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
 body{
   font-family: $font-base;
 }

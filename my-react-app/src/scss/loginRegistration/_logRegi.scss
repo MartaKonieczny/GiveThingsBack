@@ -1,0 +1,25 @@
+.log-regi{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  p{
+    color: $grey;
+    text-align: center;
+    line-height: 2rem;
+    width: 6rem;
+  }
+  .log{
+    text-decoration: none;
+    border: 1px solid transparent;
+
+  }
+  .regi{
+    text-decoration: none;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+  }
+  .nav-item:hover{
+    border: 1px solid $yellow;
+  }
+}

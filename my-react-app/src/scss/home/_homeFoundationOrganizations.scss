@@ -1,0 +1,44 @@
+.foundation-organizations{
+  p{
+    color: $color2;
+  }
+  .who{
+    margin: auto;
+    p{
+      text-align: center;
+      margin-top: 50px;
+    }
+
+
+  }
+  .list{
+    width: 800px;
+    margin: auto;
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      li{
+        border: 1px solid transparent;
+        height: 60px;
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      li:hover{
+        border: 1px solid $grey;
+      }
+    }
+  }
+  .ornament{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}

@@ -1,0 +1,73 @@
+.what-is-going-on{
+  .four-steps{
+    p{
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.7rem;
+    }
+    .ornament{
+      height: 40px;
+      margin-top: 10px;
+      background-image: url("../../assets/Decoration.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .description-steps{
+    display: flex;
+    justify-content: space-around;
+    background-color: $light-grey;
+    padding: 20px 0 30px 0;
+    margin-bottom: 20px;
+    p{
+      text-align: center;
+      line-height: 1.3rem;
+    }
+  }
+  .border{
+    text-decoration: line-through $grey;
+    color: transparent;
+  }
+  .first-icon{
+    height: 90px;
+    margin-top: 10px;
+    background-image: url("../../assets/Icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .second-icon{
+    height: 90px;
+    margin-top: 10px;
+    background-image: url("../../assets/Icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .third-icon{
+    height: 90px;
+    margin-top: 10px;
+    background-image: url("../../assets/Icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fourth-icon{
+    height: 90px;
+    margin-top: 10px;
+    background-image: url("../../assets/Icon-4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .steps-button{
+    border: 1px solid $grey;
+    margin: auto;
+    width: 220px;
+    padding: 10px 0 10px 0;
+    .text-dec{
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.9rem;
+      color: $grey;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -3,14 +3,14 @@ import React from 'react';
 class HomeAbout extends React.Component{
     render(){
         return(
-            <div id="o-co-chodzi">
-                <div>
-                    <p>O nas</p>
-                    <div>ozdobnik</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita placeat praesentium velit! Ad cumque dolor ipsa, iusto nulla sit soluta! Est exercitationem modi quam ut?</p>
-                    <div>podpis</div>
+            <div id="o-nas" className="about">
+                <div className="center">
+                    <p className="about-us">O nas</p>
+                    <div className="ornament"></div>
+                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing</p><p>elit. Expedita placeat praesentium velit! Ad cumque dolor</p><p>ipsa, iusto nulla sit soluta! Est exercitationem modi</p><p>turnip greens parsnip quam ut.</p></div>
+                    <div className="signature"></div>
                 </div>
-                <div>Zdjęcie</div>
+                <img></img>
             </div>
         )
     }

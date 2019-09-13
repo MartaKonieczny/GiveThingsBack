@@ -1,0 +1,52 @@
+.log-in{
+  margin-top: 100px;
+  .ornament{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  p{
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  .log-form{
+    background-color: $light-grey;
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-top: 30px;
+    input{
+      border-top: 0;
+      border-bottom: 1px solid $grey;
+      border-right: 0;
+      border-left: 0;
+      background-color: transparent;
+      height: 30px;
+    }
+    label{
+      color: $color2;
+    }
+    .break{
+      height: 40px;
+    }
+  }
+  .btns {
+    margin: 30px 400px;
+    display: flex;
+    justify-content: space-between;
+    button {
+      background-color: transparent;
+      color: $grey;
+      border: 1px solid transparent;
+      height: 40px;
+      width: 90px;
+    }
+    button:hover{
+      border: 1px solid $grey;
+    }
+  }
+}
