@@ -10,8 +10,8 @@ class LoggedOut extends React.Component{
                 <Nav/>,
                 <div>
                     <p>Wylogowanie nastąpiło pomyślnie!</p>
-                    <div>ozdobnik</div>
-                    <button>Strona główna</button>
+                    <div className="ornament"></div>
+                    <Link to="/"><button>Strona główna</button></Link>
                 </div>
             </>
 

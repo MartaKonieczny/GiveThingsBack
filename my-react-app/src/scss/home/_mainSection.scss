@@ -1,0 +1,42 @@
+.main-section{
+  display: flex;
+  height: 580px;
+  .img{
+    height: 600px;
+    width: 600px;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-position: right 50px bottom 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .start-helping{
+    margin-top: 190px;
+    p{
+      text-align: center;
+      line-height: 2.2rem;
+      font-size: 1.6rem;
+      color: $color1;
+    }
+    .ornament{
+      height: 40px;
+      margin-top: 20px;
+      background-image: url("../../assets/Decoration.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    ul{
+      display: flex;
+      list-style: none;
+      li{
+        border: 1px solid $grey;
+        padding: 10px 0;
+        line-height: 2rem;
+        font-size: 1.9rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 0 20px;
+        width: 250px;
+      }
+    }
+  }
+}

@@ -1,27 +1,31 @@
 import React from 'react';
 import LogRegi from "../LoginRegistration/LogRegi";
 import Nav from "../Nav/Nav";
+import {Link} from "react-router-dom";
 
 class LogIn extends React.Component{
     render(){
         return(
             <>
-                <LogRegi/>,
-                <Nav/>,
-                <div>
+                <LogRegi/>
+                <Nav/>
+                <div className="log-in">
                     <p>Zaloguj się</p>
-                    <div>ozdobnik</div>
+                    <div className="ornament"></div>
                     <form>
-                        <div>
-                            <label>Email
-                                <input type='text' name='mail'/>
-                            </label>
-                            <label>Hasło
-                                <input type='text' name='password'/>
-                            </label>
+                        <div className="log-form">
+                            <label to="e-mail">Email</label>
+                            <br/>
+                            <input id="e-mail" type='text' name='mail'/>
+                            <div className="break"></div>
+                            <label to="password">Hasło</label>
+                            <br/>
+                            <input id="password" type='text' name='password'/>
                         </div>
-                        <input type='submit' name='create-an-account' value='Załóż konto'/>
-                        <input type='submit' name='log-in' value='Zaloguj się'/>
+                        <div className="btns">
+                            <Link className="link" to='/rejestracja'><button>Załóż konto</button></Link>
+                            <button>Zaloguj się</button>
+                        </div>
                     </form>
                 </div>
             </>

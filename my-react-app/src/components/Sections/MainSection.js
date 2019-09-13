@@ -1,20 +1,27 @@
 import React from 'react';
+import Nav from "../Nav/Nav";
 
 class MainSection extends React.Component{
     render(){
         return(
-            <>
-                <div>Zdjęcie</div>
-                <p>Zacznij pomagać!</p>
-                <p>Oddaj niechciane rzeczy w zaufane ręce</p>
-                <div>Ozdobnik</div>
+            <div className="main-section">
+                <div className="img"></div>
                 <div>
-                    <ul>
-                        <li>oddaj rzeczy</li>
-                        <li>zorganizuj zbiórkę</li>
-                    </ul>
+                    <Nav/>
+                    <div className="start-helping">
+                        <p>Zacznij pomagać!</p>
+                        <p>Oddaj niechciane rzeczy w zaufane ręce</p>
+                        <div className="ornament"></div>
+                        <div>
+                            <ul>
+                                <li><p>oddaj</p><p>rzeczy</p></li>
+                                <li><p>zorganizuj</p><p>zbiórkę</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-            </>
+            </div>
         )
     }
 }

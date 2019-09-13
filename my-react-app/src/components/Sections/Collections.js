@@ -3,28 +3,34 @@ import React from 'react';
 class Collections extends React.Component{
     render(){
         return(
-            <>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ducimus, eius eum explicabo impedit ipsum labore maiores, maxime nemo neque nihil nulla omnis praesentium sapiente tempore unde!</div>
+            <div className="collections">
+                <div className="desc-coll"><p>Blanditiis ducimus, eius eum explicabo impedit ipsum labore maiores</p><p>maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><p>Nemo neque nihil nulla omnis praesentium sapiente tempore unde.</p></div>
                 <div>
                     <ul>
                         <li>
-                            <p>Zbiórka "Lorem ipsum 1"</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div>lorem, ipsum, dolor, amet</div>
+                            <h3>Zbiórka "Lorem ipsum 1"</h3>
+                            <div className="border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>lorem, ipsum, dolor, amet</p>
+                            </div>
                         </li>
                         <li>
-                            <p>Zbiórka "Lorem ipsum 2"</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div>lorem, ipsum, dolor, amet</div>
+                            <h3>Zbiórka "Lorem ipsum 2"</h3>
+                            <div className="border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>lorem, ipsum, dolor, amet</p>
+                            </div>
                         </li>
                         <li>
-                            <p>Zbiórka "Lorem ipsum 3"</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div>lorem, ipsum, dolor, amet</div>
+                            <h3>Zbiórka "Lorem ipsum 3"</h3>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>lorem, ipsum, dolor, amet</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </>
+            </div>
 
         )
     }

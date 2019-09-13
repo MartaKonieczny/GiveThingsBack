@@ -9,14 +9,14 @@ import HomeContact from "./HomeContact";
 class Home extends React.Component{
     render(){
         return(
-            <>
+            <div id="home" className="container">
                 <HomeHeader/>
                 <HomeThreeColumns/>
                 <HomeWhatIsGoingOn/>
                 <HomeAbout/>
                 <HomeFoundationOrganizations/>
                 <HomeContact/>
-            </>
+            </div>
         )
     }
 }

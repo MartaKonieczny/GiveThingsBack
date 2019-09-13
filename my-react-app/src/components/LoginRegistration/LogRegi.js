@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 class LogRegi extends React.Component{
     render(){
         return(
-            <div>
-                <Link to='/logowanie'>Zaloguj</Link>
-                <Link to='/rejestracja'>Załóż konto</Link>
+            <div className="log-regi">
+                <Link to='/logowanie' className="log nav-item"><p>Zaloguj</p></Link>
+                <Link to='/rejestracja' className="regi nav-item"><p>Załóż konto</p></Link>
             </div>
         )
     }
