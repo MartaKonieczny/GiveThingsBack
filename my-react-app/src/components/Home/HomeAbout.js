@@ -10,7 +10,7 @@ class HomeAbout extends React.Component{
                     <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing</p><p>elit. Expedita placeat praesentium velit! Ad cumque dolor</p><p>ipsa, iusto nulla sit soluta! Est exercitationem modi</p><p>turnip greens parsnip quam ut.</p></div>
                     <div className="signature"></div>
                 </div>
-                <img></img>
+                <div className="img"></div>
             </div>
         )
     }

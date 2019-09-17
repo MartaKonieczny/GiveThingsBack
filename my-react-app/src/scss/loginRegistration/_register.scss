@@ -14,7 +14,7 @@
   }
   .reg-form{
     background-color: $light-grey;
-    height: 300px;
+    height: 350px;
     width: 300px;
     margin: 0 auto;
     padding-left: 60px;
@@ -48,5 +48,9 @@
     button:hover{
       border: 1px solid $grey;
     }
+  }
+  h5{
+    padding-top: 5px;
+    color: red
   }
 }
