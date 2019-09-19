@@ -8,6 +8,10 @@
     margin-left: 700px;
     margin-top: 150px;
     padding-top: 100px;
+    padding-left: 50px;
+    table{
+      margin-bottom: 20px;
+    }
     p{
       text-align: center;
       font-size: 1.5rem;
@@ -38,7 +42,7 @@
       background-color: transparent;
     }
     .text{
-      height: 100px;
+      height: 85px;
       width: 400px;
       resize: none;
       border-top: 0;
@@ -46,6 +50,7 @@
       border-right: 0;
       border-left: 0;
       margin-left: 30px;
+      margin-top: 5px;
       background-color: transparent;
     }
     button{
@@ -80,5 +85,15 @@
         margin-bottom: 2px;
       }
     }
+  }
+  h5{
+    color: red;
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  h4{
+    color:green;
+    padding-bottom: 20px;
+    text-align: center;
   }
 }

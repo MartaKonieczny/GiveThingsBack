@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Register from "./components/LoginRegistration/Register";
 import LogIn from "./components/LoginRegistration/LogIn";
+import LoggedOut from "./components/LoginRegistration/LoggedOut";
 
 
 class App extends React.Component{
@@ -20,6 +21,7 @@ class App extends React.Component{
                 <Route exact path='/' component={Home} />
                 <Route exact path='/logowanie' component={LogIn} />
                 <Route exact path='/rejestracja' component={Register} />
+                <Route exact path='/wyloguj' component={LoggedOut} />
             </Switch>
           </HashRouter>
         </section>

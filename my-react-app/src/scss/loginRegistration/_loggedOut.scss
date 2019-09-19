@@ -1,0 +1,25 @@
+.logged-out{
+  padding-top: 150px;
+  text-align: center;  //button i p
+  p{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+    color: $grey;
+  }
+  .ornament{
+    height: 40px;
+    margin-top: 20px;
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  button{
+    color: $grey;
+    background-color: white;
+    border: 1px solid $grey;
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+
+  }
+}
