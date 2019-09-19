@@ -47,7 +47,7 @@ class HomeContact extends React.Component{
             error3.push("Wiadomość musi mieć conajmniej 120 znaków!");
         }
         else{
-            okMessage.push("Wiadomość została wysłana! Wkrótce się skontaktujemy. ");
+            okMessage.push("Wiadomość została wysłana! Wkrótce się skontaktujemy.");
         }
         this.setState({
             error1: error1,
