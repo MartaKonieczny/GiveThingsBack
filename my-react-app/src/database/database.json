@@ -131,6 +131,19 @@
       "things": "lorem, ipsum, dolor, amet"
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "name": "Marta Konieczny",
+      "mail": "marta_konieczny@op.pl",
+      "message": "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "id": 1
+    },
+    {
+      "name": "",
+      "mail": "",
+      "message": "",
+      "id": 2
+    }
+  ],
   "user": []
 }

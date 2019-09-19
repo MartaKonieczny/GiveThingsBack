@@ -1,7 +1,7 @@
 import React from 'react';
 import LogRegi from "../LoginRegistration/LogRegi";
-import Nav from "../Nav/Nav";
 import {Link} from "react-router-dom";
+import NavReactRoutDom from "../Nav/NavReactRoutDom";
 
 class LogIn extends React.Component{
     state = {
@@ -44,7 +44,7 @@ class LogIn extends React.Component{
         return(
             <>
                 <LogRegi/>
-                <Nav/>
+                <NavReactRoutDom/>
                 <div className="log-in">
                     <p>Zaloguj się</p>
                     <div className="ornament"></div>

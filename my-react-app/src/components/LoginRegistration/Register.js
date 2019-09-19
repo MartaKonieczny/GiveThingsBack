@@ -1,7 +1,7 @@
 import React from 'react';
 import LogRegi from "../LoginRegistration/LogRegi";
-import Nav from "../Nav/Nav";
 import {Link} from "react-router-dom";
+import NavReactRoutDom from "../Nav/NavReactRoutDom";
 
 class Register extends React.Component{
     state = {
@@ -68,7 +68,7 @@ class Register extends React.Component{
         return(
             <>
                 <LogRegi/>
-                <Nav/>
+                <NavReactRoutDom/>
                 <div className="regis">
                     <p>Załóż konto</p>
                     <div className="ornament"></div>

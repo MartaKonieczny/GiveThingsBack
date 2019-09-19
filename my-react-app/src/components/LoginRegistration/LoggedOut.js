@@ -1,14 +1,15 @@
 import React from 'react';
 import LogRegi from "../LoginRegistration/LogRegi";
-import Nav from "../Nav/Nav";
+
 import {Link} from 'react-router-dom';
+import NavReactRoutDom from "../Nav/NavReactRoutDom";
 
 class LoggedOut extends React.Component{
     render(){
         return(
             <>
                 <LogRegi/>
-                <Nav/>
+                <NavReactRoutDom/>
                 <div className="logged-out">
                     <p>Wylogowanie nastąpiło <p>pomyślnie!</p></p>
                     <div className="ornament"></div>
