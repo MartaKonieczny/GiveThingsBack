@@ -10,6 +10,7 @@ import {
 import Register from "./components/LoginRegistration/Register";
 import LogIn from "./components/LoginRegistration/LogIn";
 import LoggedOut from "./components/LoginRegistration/LoggedOut";
+import GiveThings from "./components/GiveThings/GiveThings";
 
 
 class App extends React.Component{
@@ -22,6 +23,7 @@ class App extends React.Component{
                 <Route exact path='/logowanie' component={LogIn} />
                 <Route exact path='/rejestracja' component={Register} />
                 <Route exact path='/wyloguj' component={LoggedOut} />
+                <Route exact path='/oddaj-rzeczy' component={GiveThings} />
             </Switch>
           </HashRouter>
         </section>
