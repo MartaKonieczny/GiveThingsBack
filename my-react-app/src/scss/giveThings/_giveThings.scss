@@ -1,0 +1,18 @@
+.give-things{
+  .position{
+    display: flex;
+    .first-background{
+      background-image: url("../../assets/Form-Hero-Image.jpg");
+      height: 600px;
+      width: 500px;
+      background-repeat: no-repeat;
+      background-position: right 230px bottom -40px;
+    }
+    .first-section{
+      width: 600px;
+      .nav{
+        margin: 0;
+      }
+    }
+  }
+}

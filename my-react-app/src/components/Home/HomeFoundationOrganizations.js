@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const apiUrl = 'http://localhost:3001';
 
 class HomeFilterFounOrga extends React.Component{
@@ -58,8 +56,8 @@ class HomeFilterFounOrga extends React.Component{
 
         const elements = currentList.map((d)=>{
             return (
-                <div key={d.id}>
-                    <li>
+                <div>
+                    <li key={d.id}>
                         <h3>{d.category} "{d.name}"</h3>
                         <div className="border">
                             <p>Cel i misja: {d.goals}</p>
