@@ -1,136 +1,154 @@
 {
+  "descriptions": [
+    {
+      "descname": "foundations",
+      "foundations": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+      "id": 2
+    },
+    {
+      "descname": "organizations",
+      "organizations": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ducimus, eius eum explicabo impedit ipsum labore maiores, maxime nemo neque nihil nulla omnis praesentium sapiente tempore unde!",
+      "id": 3
+    },
+    {
+      "descname": "collections",
+      "collections": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ducimus, eius eum explicabo impedit ipsum labore maiores, maxime nemo neque nihil nulla omnis praesentium sapiente tempore unde!",
+      "id": 4
+    }
+  ],
   "foundations": [
     {
-      "id": 1,
       "category": "Fundacja",
       "name": "Dbam o Zdrowie",
       "goals": "Pomoc osobom znajdujęcym się w trudnej sytuacji życiowej.",
-      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+      "id": 1
     },
     {
-      "id": 2,
       "category": "Fundacja",
       "name": "Dla dzieci",
       "goals": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
-      "things": "ubrania, meble, zabawki"
+      "things": "ubrania, meble, zabawki",
+      "id": 2
     },
     {
-      "id": 3,
       "category": "Fundacja",
       "name": "Bez domu",
       "goals": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-      "things": "ubrania, jedzenie, ciepłe koce"
+      "things": "ubrania, jedzenie, ciepłe koce",
+      "id": 3
     },
     {
-      "id": 4,
       "category": "Fundacja",
       "name": "Lorem 4",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 4
     },
     {
-      "id": 5,
       "category": "Fundacja",
       "name": "Lorem 5",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 5
     },
     {
-      "id": 6,
       "category": "Fundacja",
       "name": "Lorem 6",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 6
     },
     {
-      "id": 7,
       "category": "Fundacja",
       "name": "Lorem 7",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 7
     },
     {
-      "id": 8,
       "category": "Fundacja",
       "name": "Lorem 8",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 8
     },
     {
-      "id": 9,
       "category": "Fundacja",
       "name": "Lorem 9",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 9
     }
   ],
   "organizations": [
     {
-      "id": 1,
       "category": "Organizacja",
       "name": "Lorem 1",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 1
     },
     {
-      "id": 2,
       "category": "Organizacja",
       "name": "Lorem 2",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 2
     },
     {
-      "id": 3,
       "category": "Organizacja",
       "name": "Lorem 3",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 3
     },
     {
-      "id": 4,
       "category": "Organizacja",
       "name": "Lorem 4",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 4
     },
     {
-      "id": 5,
       "category": "Organizacja",
       "name": "Lorem 5",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 5
     },
     {
-      "id": 6,
       "category": "Organizacja",
       "name": "Lorem 6",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 6
     }
   ],
   "collections": [
     {
-      "id": 1,
       "category": "Zbiórka",
       "name": "Lorem 1",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Lorem 2",
       "category": "Zbiórka",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "Lorem 3",
       "category": "Zbiórka",
       "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "things": "lorem, ipsum, dolor, amet"
+      "things": "lorem, ipsum, dolor, amet",
+      "id": 3
     }
   ],
+
   "user": [
     {
       "mail": "marta_konieczny@op.pl",

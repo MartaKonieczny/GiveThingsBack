@@ -6,6 +6,7 @@ import HomeAbout from "./HomeAbout";
 import HomeFoundationOrganizations from "./HomeFoundationOrganizations";
 import HomeContact from "./HomeContact";
 
+
 class Home extends React.Component{
     render(){
         return(

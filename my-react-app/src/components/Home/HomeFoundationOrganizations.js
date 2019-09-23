@@ -66,7 +66,6 @@ class HomeFilterFounOrga extends React.Component{
             )
         });
 
-
         const pageNumbers = [];
         for (let i=1; i<= Math.ceil(list.length/orgPerPage); i++){
             const page = <li key={i} onClick={e=>this.handleClickPage(e,i)} className={this.state.currentPage === i ? "active" : ""}>{i}</li>
