@@ -58,8 +58,8 @@ class HomeFilterFounOrga extends React.Component{
 
         const elements = currentList.map((d)=>{
             return (
-                <div>
-                    <li key={d.id}>
+                <div key={d.id}>
+                    <li>
                         <h3>{d.category} "{d.name}"</h3>
                         <div className="border">
                             <p>Cel i misja: {d.goals}</p>
