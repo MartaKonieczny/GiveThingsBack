@@ -22,7 +22,7 @@ class HomeContact extends React.Component{
         const error1 = [];
         const error2 = [];
         const error3 = [];
-        const okMessage = [];
+
         if(this.state.name.length <= 3 || this.state.name.indexOf(" ")!==-1){
             error1.push("Podane imię jest nieprawidłowe!");
         }
@@ -32,16 +32,13 @@ class HomeContact extends React.Component{
         if(this.state.message.length <= 120){
             error3.push("Wiadomość musi mieć conajmniej 120 znaków!");
         }
-        if(error1.length === 0 && error2.length === 0 && error3.length === 0){
-            okMessage.push("Wiadomość została wysłana! Wkrótce się skontaktujemy.");
-        }
 
         this.setState({
             error1: error1,
             error2: error2,
             error3: error3,
-            okMessage: okMessage
         });
+
         if(error1.length === 0 && error2.length === 0 && error3.length === 0){
             fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
                 method: 'POST',
@@ -55,6 +52,9 @@ class HomeContact extends React.Component{
                 })
             })
                 .then(res => console.log(res))
+                .then( this.setState({
+                    okMessage: this.state.okMessage ? "" : "Wiadomość została wysłana! Wkrótce się skontaktujemy",
+                }))
                 .catch(e => console.log(e))
         }
     };
@@ -74,17 +74,13 @@ class HomeContact extends React.Component{
                 {this.state.error3.map((err,index)=><h5 key = {index}>{err}</h5>)}
             </h5>
         );
-        const okMessage =(
-            <h4>
-                {this.state.okMessage.map((err,index)=><h4 key = {index}>{err}</h4>)}
-            </h4>
-        );
+
         return(
             <div id="kontakt" className="contact">
                 <div className="form">
                     <p>Skontaktuj się z nami</p>
                     <div className="ornament"></div>
-                    {okMessage}
+                    <h4>{this.state.okMessage}</h4>
                     <form onSubmit={this.handleSendMessage}>
                         <table>
                             <tr>
