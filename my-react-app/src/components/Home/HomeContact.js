@@ -12,31 +12,17 @@ class HomeContact extends React.Component{
         okMessage: [],
     };
 
-    handleSendMessage = e => {
-        fetch('http://localhost:3001/messages', {
-            method: 'POST',
-            headers:{
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: this.state.name,
-                mail: this.state.mail,
-                message: this.state.message
-            })
-        })
-    };
-
     handleChange = e => {
         this.setState({
             [e.target.name]:e.target.value,
         })
     };
-    handleSubmit = e => {
+    handleSendMessage = e => {
         e.preventDefault();
         const error1 = [];
         const error2 = [];
         const error3 = [];
-        const okMessage = [];
+
         if(this.state.name.length <= 3 || this.state.name.indexOf(" ")!==-1){
             error1.push("Podane imię jest nieprawidłowe!");
         }
@@ -46,15 +32,31 @@ class HomeContact extends React.Component{
         if(this.state.message.length <= 120){
             error3.push("Wiadomość musi mieć conajmniej 120 znaków!");
         }
-        else{
-            okMessage.push("Wiadomość została wysłana! Wkrótce się skontaktujemy.");
-        }
+
         this.setState({
             error1: error1,
             error2: error2,
             error3: error3,
-            okMessage: okMessage
         });
+
+        if(error1.length === 0 && error2.length === 0 && error3.length === 0){
+            fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: this.state.name,
+                    email: this.state.mail,
+                    message: this.state.message
+                })
+            })
+                .then(res => console.log(res))
+                .then( this.setState({
+                    okMessage: this.state.okMessage ? "" : "Wiadomość została wysłana! Wkrótce się skontaktujemy",
+                }))
+                .catch(e => console.log(e))
+        }
     };
     render(){
         const error1Message = (
@@ -72,18 +74,14 @@ class HomeContact extends React.Component{
                 {this.state.error3.map((err,index)=><h5 key = {index}>{err}</h5>)}
             </h5>
         );
-        const okMessage =(
-            <h4>
-                {this.state.okMessage.map((err,index)=><h4 key = {index}>{err}</h4>)}
-            </h4>
-        );
+
         return(
             <div id="kontakt" className="contact">
                 <div className="form">
                     <p>Skontaktuj się z nami</p>
                     <div className="ornament"></div>
-                    {okMessage}
-                    <form onSubmit={this.handleSubmit}>
+                    <h4>{this.state.okMessage}</h4>
+                    <form onSubmit={this.handleSendMessage}>
                         <table>
                             <tr>
                                 <td><label htmlFor="name">Wpisz swoje imię</label></td>
@@ -105,7 +103,7 @@ class HomeContact extends React.Component{
                         <textarea onChange={this.handleChange} id="text" className="text" type="text" name='message' placeholder='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ipsum iste quo tempora unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem ipsum iste quo tempora unde.' value={this.state.message}></textarea>
                         {error3Message}
                         <br/>
-                        <button onClick={ this.handleSendMessage }>Wyślij</button>
+                        <button>Wyślij</button>
                     </form>
                 </div>
                 <div className="footer">
