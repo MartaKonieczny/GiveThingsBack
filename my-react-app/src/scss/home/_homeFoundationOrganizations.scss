@@ -39,12 +39,6 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .paginationList{
-    .border{
-      display: flex;
-      justify-content: space-between;
-    }
-  }
   .pages{
     ul{
       display: flex;
@@ -72,6 +66,10 @@
 .paginationList{
   width: 900px;
   margin: 0 auto;
+  .border{
+    display: flex;
+    justify-content: space-between;
+  }
   ul{
     list-style: none;
     li{
@@ -85,13 +83,6 @@
     h3{
       font-weight: normal;
     }
-    div{
-      //display: flex;
-      //justify-content: space-between;
-      color: $grey;
-      margin-bottom: 10px;
-      font-size: 0.9rem;
-    }
   }
   .org{
     margin-top: 40px;
@@ -103,4 +94,3 @@
     }
   }
 }
-

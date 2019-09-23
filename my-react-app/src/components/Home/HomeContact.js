@@ -83,7 +83,7 @@ class HomeContact extends React.Component{
                     <h4>{this.state.okMessage}</h4>
                     <form onSubmit={this.handleSendMessage}>
                         <table>
-                        <tbody>
+                          <tbody>
                             <tr>
                                 <td><label htmlFor="name">Wpisz swoje imię</label></td>
                                 <td><label htmlFor="mail" className="mail">Wpisz swój email</label></td>
@@ -98,7 +98,7 @@ class HomeContact extends React.Component{
                                     {error2Message}
                                 </td>
                             </tr>
-                        </tbody>
+                          </tbody>
                         </table>
                         <label htmlFor="text">Wpisz swoją wiadomość</label>
                         <br/>

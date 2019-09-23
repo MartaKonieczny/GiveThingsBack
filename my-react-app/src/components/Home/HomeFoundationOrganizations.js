@@ -56,18 +56,15 @@ class HomeFilterFounOrga extends React.Component{
 
         const elements = currentList.map((d)=>{
             return (
-                <div>
-                    <li key={d.id}>
-                        <h3>{d.category} "{d.name}"</h3>
-                        <div className="border">
-                            <p>Cel i misja: {d.goals}</p>
-                            <h4>{d.things}</h4>
-                        </div>
-                    </li>
-                </div>
+                <li key={d.id}>
+                    <h3>{d.category} "{d.name}"</h3>
+                    <div className="border">
+                        <p>Cel i misja: {d.goals}</p>
+                        <h4>{d.things}</h4>
+                    </div>
+                </li>
             )
         });
-
 
         const pageNumbers = [];
         for (let i=1; i<= Math.ceil(list.length/orgPerPage); i++){

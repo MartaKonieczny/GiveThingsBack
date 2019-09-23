@@ -11,7 +11,7 @@ class LoggedOut extends React.Component{
                 <LogRegi/>
                 <NavReactRoutDom/>
                 <div className="logged-out">
-                    <p>Wylogowanie nastąpiło <p>pomyślnie!</p></p>
+                    <div><p>Wylogowanie nastąpiło</p><p>pomyślnie!</p></div>
                     <div className="ornament"></div>
                     <Link to="/"><button>Strona główna</button></Link>
                 </div>
