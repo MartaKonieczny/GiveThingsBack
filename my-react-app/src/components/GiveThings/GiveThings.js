@@ -13,22 +13,26 @@ import Thanks from "./Thanks";
 class GiveThings extends React.Component{
     render(){
         return(
-            <>
-                <div>obrazek</div>
-                <div>
-                    <LogRegi/>
-                    <NavReactRoutDom/>
-                    <div>
-                        <p>Oddaj rzeczy, których juz nie chcesz</p><p>POTRZEBUJĄCYM</p>
-                        <div>ornament</div>
-                        <p>Wystarczą 4 proste kroki:</p>
-                        <ul>
-                            <li><p>1</p><p>Wybierz</p><p>rzeczy</p></li>
-                            <li><p>2</p><p>Spakuj je</p><p>w worki</p></li>
-                            <li><p>3</p><p>Wybierz</p><p>fundację</p></li>
-                            <li><p>4</p><p>Zamów</p><p>kuriera</p></li>
-                        </ul>
+            <div className="give-things">
+                <div className="position">
+                    <div className="first-background"></div>
+                    <div className="first-section">
+                        <LogRegi className="log"/>
+                        <NavReactRoutDom className="nav"/>
+                        <div>
+                            <p>Oddaj rzeczy, których juz nie chcesz</p><p>POTRZEBUJĄCYM</p>
+                            <div>ornament</div>
+                            <p>Wystarczą 4 proste kroki:</p>
+                            <ul>
+                                <li><p>1</p><p>Wybierz</p><p>rzeczy</p></li>
+                                <li><p>2</p><p>Spakuj je</p><p>w worki</p></li>
+                                <li><p>3</p><p>Wybierz</p><p>fundację</p></li>
+                                <li><p>4</p><p>Zamów</p><p>kuriera</p></li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div>
                     <div>
                         <p>Ważne!</p>
                         <p>Uzupełnij szczegóły dotyczące Twoicg rzeczy. Dzięki temu będziemy wiedzień komu najlepiej je przekazać.</p>
@@ -41,7 +45,7 @@ class GiveThings extends React.Component{
                     <Thanks/>
                     <HomeContact/>
                 </div>
-            </>
+            </div>
 
         )
     }
