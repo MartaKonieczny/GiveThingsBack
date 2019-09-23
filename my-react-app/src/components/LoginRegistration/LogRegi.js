@@ -8,7 +8,6 @@ class LogRegi extends React.Component{
                 <Link to='/logowanie' className="log nav-item"><p>Zaloguj</p></Link>
                 <Link to='/rejestracja' className="regi nav-item"><p>Załóż konto</p></Link>
                 <p>Cześć mail</p>
-                <Link to='/oddaj-rzeczy' className="logout nav-item"><p>Oddaj rzeczy</p></Link>
                 <Link to='/wyloguj' className="logout nav-item"><p>Wyloguj</p></Link>
             </div>
         )
