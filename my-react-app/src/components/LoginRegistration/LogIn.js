@@ -9,6 +9,7 @@ class LogIn extends React.Component{
         password: "",
         err1: [],
         err2: [],
+        user: null
     };
     handleChange = e => {
         this.setState({
@@ -29,6 +30,21 @@ class LogIn extends React.Component{
             err1: err1,
             err2: err2,
         });
+        if(err1.length === 0 && err2.length === 0){
+            fetch('http://localhost:3001/user', {
+                mail:this.state.mail,
+                password: this.state.password
+            })
+                .then(res => res.json())
+                .then(users => {
+                    const usr = users.find(user => user.mail === this.state.mail)
+                    if (usr) {
+                        this.setState(prevState => ({
+                            user: usr.password === prevState.password ? usr : null
+                        }))
+                    }
+                })
+        }
     };
     render(){
         const err1Messages = (
@@ -41,6 +57,7 @@ class LogIn extends React.Component{
                 {this.state.err2.map((err,index)=><h5 key = {index}>{err}</h5>)}
             </h5>
         );
+        console.log(this.state.user)
         return(
             <>
                 <LogRegi/>

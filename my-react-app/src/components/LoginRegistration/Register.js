@@ -42,6 +42,19 @@ class Register extends React.Component{
             err3: err3,
             err4: err4,
         });
+        if(err1.length === 0 && err2.length === 0 && err3.length === 0){
+            fetch('http://localhost:3001/user', {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    mail: this.state.mail,
+                    password: this.state.password,
+                    repeatPassword: this.state.repeatPassword
+                })
+            })
+        }
     };
 
     render(){

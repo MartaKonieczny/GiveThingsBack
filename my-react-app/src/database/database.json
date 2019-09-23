@@ -149,5 +149,12 @@
     }
   ],
 
-  "user": []
+  "user": [
+    {
+      "mail": "marta_konieczny@op.pl",
+      "password": "dddddddddd",
+      "repeatPassword": "dddddddddd",
+      "id": 1
+    }
+  ]
 }
