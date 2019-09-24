@@ -1,6 +1,12 @@
 import React from 'react';
 
-class Step2 extends React.Component{
+class Step3 extends React.Component{
+    handleClickNext =e=>{
+        console.log("ok");
+    }
+    handleClickPrev =e=>{
+        console.log("ok");
+    }
     render(){
         return(
             <div>
@@ -36,8 +42,8 @@ class Step2 extends React.Component{
                         <input type="text"/>
                     </form>
                     <div>
-                        <button>Wstecz</button>
-                        <button>Dalej</button>
+                        <button onClick={this.handleClickPrev}>Wstecz</button>
+                        <button onClick={this.handleClickNext}>Dalej</button>
                     </div>
                 </div>
             </div>
@@ -45,4 +51,4 @@ class Step2 extends React.Component{
     }
 }
 
-export default Step2;
+export default Step3;

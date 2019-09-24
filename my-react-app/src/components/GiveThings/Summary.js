@@ -1,6 +1,12 @@
 import React from 'react';
 
 class Summary extends React.Component{
+    handleClickNext =e=>{
+        console.log("ok");
+    }
+    handleClickPrev =e=>{
+        console.log("ok");
+    }
     render(){
         return(
             <div className="summary">
@@ -63,8 +69,8 @@ class Summary extends React.Component{
                     </table>
                 </form>
                 <div>
-                    <button>Wstecz</button>
-                    <button>Potwierdzam</button>
+                    <button onClick={this.handleClickPrev}>Wstecz</button>
+                    <button onClick={this.handleClickNext}>Potwierdzam</button>
                 </div>
             </div>
 
