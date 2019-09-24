@@ -1,6 +1,10 @@
 import React from 'react';
 
 class Step1 extends React.Component{
+
+    handleClickNext =e=>{
+        console.log("ok");
+    }
     render(){
         return(
             <div>
@@ -12,15 +16,13 @@ class Step1 extends React.Component{
                     <p>Krok1/4</p>
                     <h5>Zaznacz co chcesz oddać:</h5>
                     <form>
-                        <label>
-                            <input className="checkbox" type="checkbox"/><span>ubrania, które nadają się do ponownego użycia</span><br/>
-                            <input className="checkbox" type="checkbox"/><span>ubrania do wyrzucenia</span><br/>
-                            <input className="checkbox" type="checkbox"/><span>zabawki</span><br/>
-                            <input className="checkbox" type="checkbox"/><span>książki</span><br/>
-                            <input className="checkbox" type="checkbox"/><span>inne</span><br/>
-                        </label>
+                        <label><input className="checkbox" type="checkbox" value="good-clothes"/><span>ubrania, które nadają się do ponownego użycia</span><br/></label>
+                        <label><input className="checkbox" type="checkbox" value="bad-clothes"/><span>ubrania do wyrzucenia</span><br/></label>
+                        <label><input className="checkbox" type="checkbox" value="toys"/><span>zabawki</span><br/></label>
+                        <label><input className="checkbox" type="checkbox" value="books"/><span>książki</span><br/></label>
+                        <label><input className="checkbox" type="checkbox" value="other"/><span>inne</span><br/></label>
                     </form>
-                    <button>Dalej</button>
+                    <button onClick={this.handleClickNext}>Dalej</button>
                 </div>
             </div>
         )

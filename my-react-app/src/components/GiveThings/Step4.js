@@ -1,6 +1,12 @@
 import React from 'react';
 
 class Step4 extends React.Component{
+    handleClickNext =e=>{
+        console.log("ok");
+    }
+    handleClickPrev =e=>{
+        console.log("ok");
+    }
     render(){
         return(
             <div>
@@ -56,8 +62,8 @@ class Step4 extends React.Component{
                         </table>
                     </form>
                     <div>
-                        <button>Wstecz</button>
-                        <button>Dalej</button>
+                        <button onClick={this.handleClickPrev}>Wstecz</button>
+                        <button onClick={this.handleClickNext}>Dalej</button>
                     </div>
                 </div>
 
