@@ -19,24 +19,26 @@ class GiveThings extends React.Component{
                     <div className="first-section">
                         <LogRegi className="log"/>
                         <NavReactRoutDom className="nav"/>
-                        <div>
-                            <p>Oddaj rzeczy, których juz nie chcesz</p><p>POTRZEBUJĄCYM</p>
-                            <div>ornament</div>
-                            <p>Wystarczą 4 proste kroki:</p>
+                        <div className="instruction">
+                            <h4>Oddaj rzeczy, których juz nie chcesz</h4><h4>POTRZEBUJĄCYM</h4>
+                            <div className="ornament"></div>
+                            <h3>Wystarczą 4 proste kroki:</h3>
+                            <ul className="squares">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                             <ul>
-                                <li><p>1</p><p>Wybierz</p><p>rzeczy</p></li>
-                                <li><p>2</p><p>Spakuj je</p><p>w worki</p></li>
-                                <li><p>3</p><p>Wybierz</p><p>fundację</p></li>
-                                <li><p>4</p><p>Zamów</p><p>kuriera</p></li>
+                                <li><h6>1</h6><p>Wybierz</p><p>rzeczy</p></li>
+                                <li><h6>2</h6><p>Spakuj je</p><p>w worki</p></li>
+                                <li><h6>3</h6><p>Wybierz</p><p>fundację</p></li>
+                                <li><h6>4</h6><p>Zamów</p><p>kuriera</p></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <p>Ważne!</p>
-                        <p>Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzień komu najlepiej je przekazać.</p>
-                    </div>
                     <Step1/>
                     <Step2/>
                     <Step3/>

@@ -4,44 +4,64 @@ class Step4 extends React.Component{
     render(){
         return(
             <div>
-                <p>Krok4/4</p>
-                <h5>Podaj adres oraz termin odbioru rzeczy przez kuriera</h5>
-                <form>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td><label htmlFor="adres"><h6>Adres odbioru:</h6></label></td>
-                            <td><label htmlFor="termin"><h6>Termin odbioru:</h6></label></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Ulica</span>
-                                <input id="adres" type='text' name='adres'/><br/>
-                                <span>Miasto</span>
-                                <input id="adres" type='text' name='adres'/><br/>
-                                <span><p>Kod</p><p>pocztowy</p></span>
-                                <input id="adres" type='text' name='adres'/><br/>
-                                <span><p>Numer</p><p>telefonu</p></span>
-                                <input id="adres" type='text' name='adres'/><br/>
-                            </td>
-                            <td>
-                                <span>Data</span>
-                                <input id="termin" type='text' name='termin'/><br/>
-                                <span>Godzina</span>
-                                <input id="termin" type='text' name='termin'/><br/>
-                                <span><p>Uwagi</p><p>dla kuriera</p></span>
-                                <textarea id="termin" type='text' name='termin'/><br/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </form>
-                <div>
-                    <button>Wstecz</button>
-                    <button>Dalej</button>
+                <div className="important">
+                    <h3>Ważne!</h3>
+                    <p>Podaj adres oraz termin odbioru rzeczy</p>
                 </div>
-            </div>
+                <div className="step4">
+                    <p>Krok4/4</p>
+                    <h5>Podaj adres oraz termin odbioru rzeczy przez kuriera</h5>
+                    <form>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><label htmlFor="adres"><h4>Adres odbioru:</h4></label></td>
+                                <td><label htmlFor="termin"><h4>Termin odbioru:</h4></label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <tr>
+                                        <td><span>Ulica</span></td>
+                                        <td><input id="adres" type='text' name='adres'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Miasto</span></td>
+                                        <td><input id="adres" type='text' name='adres'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span><h2>Kod</h2><h2>pocztowy</h2></span></td>
+                                        <td><input id="adres" type='text' name='adres'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span><h2>Numer</h2><h2>telefonu</h2></span></td>
+                                        <td><input id="adres" type='text' name='adres'/></td>
+                                    </tr>
+                                </td>
+                                <td>
+                                    <tr>
+                                        <td><span>Data</span></td>
+                                        <td><input id="termin" type='text' name='termin'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Godzina</span></td>
+                                        <td><input id="termin" type='text' name='termin'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span><h2>Uwagi</h2><h2>dla kuriera</h2></span></td>
+                                        <td><textarea id="termin" type='text' name='termin'/></td>
+                                    </tr>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div>
+                        <button>Wstecz</button>
+                        <button>Dalej</button>
+                    </div>
+                </div>
 
+            </div>
         )
     }
 }
