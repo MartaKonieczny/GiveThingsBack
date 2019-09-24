@@ -1,0 +1,69 @@
+.summary{
+  padding-left: 80px;
+  background-image: url("../../assets/Background-Form.jpg");
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  background-size: cover;
+  p{
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  span{
+    h2{
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+  button{
+    background-color: transparent;
+    height: 40px;
+    width: 90px;
+    margin-top: 50px;
+    border: 1px solid $grey;
+    border-left: 2px solid $grey;
+    border-top: 2px solid $grey;
+    color: $grey;
+    margin-right: 20px;
+  }
+  table{
+    margin-top: 15px;
+    input{
+      height: 20px;
+    }
+  }
+  td{
+    width: 300px;
+    //border: 1px solid lightgreen;
+    padding: 5px 0;
+  }
+}
+.icons{
+  display: flex;
+  padding-top: 10px;
+  td{
+    width: 400px;
+  }
+  .icon1{
+    height: 40px;
+    width: 40px;
+    background-image: url("../../assets/Icon-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .icon2{
+    height: 40px;
+    width: 40px;
+    background-image: url("../../assets/Icon-4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+}
+
+

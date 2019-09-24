@@ -1,0 +1,54 @@
+.important{
+  background-color: $yellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 80px;
+  h3{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+}
+.step1{
+  padding-left: 80px;
+  background-image: url("../../assets/Background-Form.jpg");
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  background-size: cover;
+  p{
+    padding-top: 40px;
+    padding-bottom: 35px;
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  form{
+    .checkbox{
+      margin: 10px 0;
+      height: 20px;
+      width: 20px;
+      background-color: red;
+    }
+    span{
+      font-size: 1.2rem;
+      color: $grey;
+      padding-left: 20px;
+    }
+  }
+  button{
+    background-color: transparent;
+    height: 40px;
+    width: 90px;
+    margin-top: 70px;
+    border: 1px solid $grey;
+    border-left: 2px solid $grey;
+    border-top: 2px solid $grey;
+    color: $grey;
+  }
+}

@@ -3,52 +3,60 @@ import React from 'react';
 class Summary extends React.Component{
     render(){
         return(
-            <div>
+            <div className="summary">
                 <h5>Podsumowanie Twojej darowizny</h5>
-                <h6>Oddajesz:</h6>
-                <div>
-                    <div>ikona koszulki</div>
-                    <p><span>4 worki,</span><span>ubrania w dobrym stanie</span><span>dzieciom</span></p>
-                </div>
-                <div>
-                    <div>ikona ładowania</div>
-                    <p><span>Dla lokalizacji:</span><span>Warszawa</span></p>
-                </div>
+                <h4>Oddajesz:</h4>
+                <table>
+                    <tbody>
+                    <tr className="icons">
+                        <td className="icon1"><div></div></td>
+                        <td><p>4 worki, ubrania w dobrym stanie dzieciom</p></td>
+                    </tr>
+                    <tr className="icons">
+                        <td className="icon2"><div></div></td>
+                        <td><p>Dla lokalizacji: Warszawa</p></td>
+                    </tr>
+                    </tbody>
+                </table>
                 <form>
                     <table>
                         <tbody>
                         <tr>
-                            <td><label htmlFor="adres"><h6>Adres odbioru:</h6></label></td>
-                            <td><label htmlFor="termin"><h6>Termin odbioru:</h6></label></td>
+                            <td><label htmlFor="adres"><h4>Adres odbioru:</h4></label></td>
+                            <td><label htmlFor="termin"><h4>Termin odbioru:</h4></label></td>
                         </tr>
                         <tr>
-                            <td>
-                                <div>
-                                    <span>Ulica</span><span>Prosta 51</span>
-                                </div>
-                                <div>
-                                    <span>Miasto</span><span>Warszawa</span>
-                                </div>
-                                <div>
-                                    <span><p>Kod</p><p>pocztowy</p></span><span>90-209</span>
-                                </div>
-                                <div>
-                                    <span><p>Numer</p><p>telefonu</p></span><span>473 839 483</span>
-                                </div>
+    <td>
+                                <tr>
+                                    <td><span>Ulica</span></td>
+                                    <td><span>Prosta 51</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Miasto</span></td>
+                                    <td><span>Warszawa</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><h2>Kod</h2><h2>pocztowy</h2></span></td>
+                                    <td><span>90-209</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><h2>Numer</h2><h2>telefonu</h2></span></td>
+                                    <td><span>473 839 483</span></td>
+                                </tr>
                             </td>
                             <td>
-                                <div>
-                                    <span>Data</span><span>17.10.2019</span>
-                                </div>
-                                <div>
-                                    <span>Godzina</span><span>17:30</span>
-                                </div>
-                                <div>
-                                    <span>Ulica</span><span>Ulica</span>
-                                </div>
-                                <div>
-                                    <span><p>Uwagi</p><p>dla kuriera</p></span><span>Ulica</span>
-                                </div>
+                                <tr>
+                                    <td><span>Data</span></td>
+                                    <td><span>17.10.2019</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Godzina</span></td>
+                                    <td><span>17:30</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><h2>Uwagi</h2><h2>dla kuriera</h2></span></td>
+                                    <td><span></span></td>
+                                </tr>
                             </td>
                         </tr>
                         </tbody>

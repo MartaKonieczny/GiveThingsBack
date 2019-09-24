@@ -1,0 +1,27 @@
+.thanks{
+  padding-left: 80px;
+  padding-top: 250px;
+  background-image: url("../../assets/Background-Form.jpg");
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  background-size: cover;
+  .center{
+    margin-right: 400px;
+    p{
+      text-align: center;
+      color: $color2;
+      font-size: 2rem;
+    }
+  }
+
+  .ornament{
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
